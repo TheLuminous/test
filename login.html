@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+		
+		
+			<p>用户登录</p>
+			
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="">用户名:</label><input id="username" type="text" name="username" >
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">密码:</label><input id="password" type="text" name="password" >
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">验证码:</label><input id="vercode" type="text" name="vercode" >
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="cancel" type="reset" value="取消">
+							<input id="submit" type="submit" value="确认">
+						</td>
+					</tr>
+				</table>	
+			</form>
+		</div>
+		<script>
+			window.onload=function(){
+				var btn = document.getElementById("submit");
+					btn.onclick=function(){
+						window.close();
+						window.open("main.html");
+
+					}
+			}
+		</script>
+	</body>
+</html>
